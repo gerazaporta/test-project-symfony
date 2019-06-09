@@ -1,0 +1,9 @@
+_index:
+    path:     /
+    defaults: { _controller: "AppBundle:Sale:index" }
+    methods:  [GET, POST]
+
+_new:
+    path:     /new
+    defaults: { _controller: "AppBundle:Sale:new" }
+    methods:  [GET, POST]

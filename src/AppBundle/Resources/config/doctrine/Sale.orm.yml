@@ -1,0 +1,19 @@
+AppBundle\Entity\Sale:
+    type: entity
+    table: sales
+    repositoryClass: AppBundle\Repository\SaleRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        date:
+            type: datetime
+        product:
+            type: string
+            length: '45'
+        amount:
+            type: float
+    lifecycleCallbacks: {  }

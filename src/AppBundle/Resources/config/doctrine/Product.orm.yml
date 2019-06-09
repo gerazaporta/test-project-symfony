@@ -1,0 +1,16 @@
+AppBundle\Entity\Product:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\ProductRepository
+    id:
+        idproduct:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        productname:
+            type: string
+            length: '45'
+            nullable: true
+    lifecycleCallbacks: {  }

@@ -1,0 +1,24 @@
+{#
+    Side Bar -- Begin
+#}
+<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+    <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link {{ (page is defined and page == 'index') ? 'active' : '' }}" href="{{ path('_index') }}">
+                <span data-feather="home"></span>
+                Sales Report <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ (page is defined and page == 'new') ? 'active' : '' }}" href="{{ path('_new') }}">
+                <span data-feather="file"></span>
+                New Sale
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+{#
+    Side Bar -- End
+#}
